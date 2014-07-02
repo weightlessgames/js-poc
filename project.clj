@@ -17,7 +17,8 @@
               :builds [{ :source-paths ["src"]
                          :compiler { :output-to "resources/public/js/compiled/atura.js"
                                      :output-dir "resources/public/js/compiled/out"
-                                     :optimizations :none }}]}
+                                     :optimizations :none
+                                     :source-map true }}]}
   :figwheel {
              :http-server-root "public" ;; default and assumes "resources"
              :server-port 3449 ;; default
